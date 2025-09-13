@@ -1,0 +1,20 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 16fr;
+  height: 100vh;
+  overflow: auto;
+}
+
+.app .pageComponents {
+  margin-left: 5rem;
+  overflow-y: auto;
+}
+
+h1 {
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+h2 {
+  margin-bottom: 4rem;
+}

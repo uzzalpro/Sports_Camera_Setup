@@ -1,0 +1,48 @@
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltipBox {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltipVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top {
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+}
+
+.bottom {
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+}
+
+.left {
+  top: 50%;
+  right: 125%;
+  transform: translateY(-50%) translateX(-8px);
+}
+
+.right {
+  top: 50%;
+  left: 125%;
+  transform: translateY(-50%) translateX(8px);
+}

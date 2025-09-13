@@ -1,0 +1,94 @@
+{
+    "cameras": [
+        {
+            "id": 1,
+            "resolution": [3840, 2160],
+            "position": "center",
+            "field": {
+                "dimensions": [
+                    1920,
+                    1080
+                ],
+                "filepath": ".mp4",
+                "line_points": [[218, 662], [496, 482], [1418, 480], [1698, 658]],
+                "outer_points": [[961, 716], [80, 682], [455, 465], [1424, 463], [1453, 462], [1575, 539], [1791, 693]],
+                "_combine_lines_points": [[[1750, 108], [1773, 1077]]]
+            },
+            "homography": {
+                "created": "2022-03-12 12:12:28",
+                "source": {
+                    "dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "filepath": "center.png",
+                    "points": [[491, 477], [1420, 475], [1716, 661], [196, 666]]
+                },
+                "destination": {
+                    "dimensions": [
+                        1280,
+                        720
+                    ],
+                    "filepath": "pitch.png",
+                    "points": [[88, 69], [1194, 69], [1194, 652], [88, 652]]
+                }
+            },
+            "distortion" : {
+                "center" : [0.5, 0.5],
+                "length" : [0.5, 0.5],
+                "param" : [0.0, 0.0, 0.0, 0.0, 0.0],
+                "zoom"   : 0.0,
+                "dimensions": [
+                    3840,
+                    2160
+                ]
+            },
+            "cropping": {
+                "type": "dynamic",
+                "crops_xyxy": [
+                    [[0.05, 0.3], [0.5, 0.95]]
+                ]
+            },
+            "path": "G:\\hardware_partners\\teamtrack\\basket_ball\\1",
+            "time_format": "%Y%m%d-%H%M%S",
+            "time_correction": 0.0
+        }
+    ],
+    "detector": {
+        "model_name": "yolov8l.pt",
+        "img_size": 1280
+    },
+    "device": "gpu",
+    "pitch_dimensions": [30, 20],
+    "field_model": {
+        "dimensions": [1280, 720],
+        "path": "TeamTrack/pitch_basketball.png",
+        "left_top_corner": [88, 69],
+        "right_bottom_corner": [1194, 652]
+    },
+    "output": {
+        "dimensions": [
+            1920,
+            1080
+        ],
+        "path": "outputs/teamtrack/basketball/1",
+        "_extract_data_path": "data",
+        "fps": 10
+    },
+    "timestamps": {
+        "start": "2023-06-04 20:00:00",
+        "end": "2023-06-04 22:30:00",
+        "format": "%Y-%m-%d %H:%M:%S"
+    },
+    "debug": {
+        "visualize": true
+    },
+    "stop_team_after": 0,
+    "tracker_type": "none",
+    "team_detector": {
+        "type": "relational",
+        "_model_name": "feat_dual_head_rgb_3epoch_blueblue_vs_whitewhite_06112024.pth",
+        "use_hsl": false,
+        "old_dual_head": false
+    }
+}
